@@ -1,0 +1,298 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Main menu styles */
+  .navbar {
+    background-color: #837d7d;
+    overflow: hidden;
+  }
+  
+  .navbar img {
+    height: 40px; /* Adjust the height as per your logo size */
+    margin-right: 10px; /* Optional margin to separate the logo from the menu items */
+  }
+
+
+
+  .navbar a {
+    float: left;
+    display: block;
+    color: rgb(207, 197, 152);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  /* Header styles */
+  .header {
+    background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/8e6a7747326389.5b8dd16f62895.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+
+  .header h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #eeeeee;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .header p {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+
+  .header button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #200a0a;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  /* About section styles */
+  .about {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+  }
+
+  .about img {
+    width: 400px;
+    margin-right: 50px;
+    height: 500px;
+  }
+
+  /* Styles for the container */
+.about {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Styles for the image */
+  .about img {
+    width: 400px; /* Adjust the size as needed */
+    height: 500px; /* Adjust the size as needed */
+    object-fit: cover;
+    margin-right: 20px; /* Adjust the spacing between image and text */
+    transition: transform 0.3s ease; /* Add hover animation */
+  }
+  
+  /* Hover effect on the image */
+  .about img:hover {
+    transform: scale(1.1); /* Adjust the scale value as needed */
+  }
+  
+  /* Styles for the description */
+  .about .description {
+    flex: 1;
+  }
+  
+  /* Pop-up animation for the description */
+  .about .description p {
+    animation: popUp 0.5s ease;
+  }
+  
+  @keyframes popUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    .about {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .about img {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+  
+
+  /* Projects section styles */
+  .projects {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px;
+  }
+
+  .card {
+    width: 300px;
+    margin-bottom: 30px;
+    background-size: cover;
+    background-position: center;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px;
+  }
+
+  .card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: rgb(248, 246, 246);
+  }
+
+  .card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: rgb(221, 112, 10);
+  }
+
+  .card button {
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  /* Footer styles */
+  .footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Global Styles */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    animation: slideInDown 1s ease;
+  }
+  
+  /* Paragraph Styles */
+  p {
+    margin: 20px 0;
+    animation: fadeIn 1s ease;
+  }
+  
+  
+  
+  /* Projects Section Styles */
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 50px;
+    animation: slideInUp 1s ease;
+  }
+  
+  .projects .card {
+    position: relative;
+    background-color: #f1f1f1;
+    padding: 20px;
+    transition: transform 0.3s;
+  }
+  
+  .projects .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .projects .card .learn-more-btn {
+    background-color: #ebe9e9;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .projects .card .learn-more-btn:hover {
+    background-color: #5f1616;
+  }
+  
+  /* Popup Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Float Animation */
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Slide-in Animation */
+  @keyframes slideInDown {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideInUp {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
